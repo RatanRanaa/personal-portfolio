@@ -55,12 +55,12 @@ const Skills = () => {
   ];
 
   return (
-    <div id="experience" className="w-full bg-black text-white h-full pb-16">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-red-500 font-bold">
+    <div id="experience" className="w-full bg-black text-white md:h-full h-full pb-16">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center ">
+        <h2 className="text-5xl md:text-7xl border-b-4 inline tracking-wider uppercase text-red-500 font-bold">
           skills
         </h2>
-        <p className="py-4 max-w-lg">
+        <p className="py-4 w-72 flex items-center justify-center flex-col mx-auto mt-4">
           I have given too much time to learn this all thing just Now I have compleated One Years And Now a day's I am working on Next.js
           
         </p>
