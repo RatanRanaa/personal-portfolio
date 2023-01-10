@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import React from "react";
 import arrayDestruct from "../images/arrayDestruct.jpg";
-import installNode from "../images/installNode.jpg";
+// import installNode from "../images/installNode.jpg";
 import navbar from "../images/navbar.jpg";
 import reactParallax from "../images/reactParallax.jpg";
-import reactSmooth from "../images/reactSmooth.jpg";
-import reactWeather from "../images/reactWeather.jpg";
+// import reactSmooth from "../images/reactSmooth.jpg";
+// import reactWeather from "../images/reactWeather.jpg";
 
 const Projects = () => {
   const portfolios = [
@@ -20,24 +21,24 @@ const Projects = () => {
       id: 3,
       src: navbar,
     },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 4,
+    //   src: reactSmooth,
+    // },
+    // {
+    //   id: 5,
+    //   src: installNode,
+    // },
+    // {
+    //   id: 6,
+    //   src: reactWeather,
+    // },
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b bg-black w-full text-white md:h-screen" //from-black to-gray-800
     >
       <div className="max-w-screen-lg p-12 md:p-24 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8 flex items-center justify-center flex-col">
@@ -47,13 +48,13 @@ const Projects = () => {
           <p className="py-3">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <motion.div animate={{y:0}} initial={{y:400}} transition={{ ease: "easeInOut", duration: 2 }} className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 h-24 w-full"
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
@@ -65,7 +66,7 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
