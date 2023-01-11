@@ -4,11 +4,12 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+    
   return (
     <>
         <div className=' w-full h-14 bg-black shadow-2xl fixed z-10'>
             <div className=' flex items-center justify-between px-20'>
-                <motion.div animate={{rotateZ: 0, x:0}} initial={{x:-160}} transition={{ ease: "easeOut", duration: 2 }}  className=' flex items-center justify-center pt-2'>
+                <motion.div animate={{rotateZ: 0, x:0}} initial={{x:-160}} transition={{ ease: "easeOut", duration: 2 }}  className=' flex items-center justify-center p-2'>
                     <Link to="/"><img className=' cursor-pointer bg-cover bg-center rounded-3xl' src="/Images/Fire.jpg" width={80} alt="logo" /></Link>
                 </motion.div>
                 <div className=' text-white cursor-pointer'>
@@ -37,7 +38,7 @@ const Navbar = () => {
                     <motion.h1 animate={{rotateZ: 0, x:0}} initial={{x:160}} transition={{ ease: "easeOut", duration: 2 }} onClick={()=>setToggle(!toggle)}>{toggle ? <i class="fa-solid fa-xmark md:hidden text-[20px]"></i> : <i class="fa-solid fa-bars md:hidden text-[20px]"></i>}</motion.h1>
                 </div>
             </div>
-            <div className={toggle ?' relative w-full bg-black top-0 h-screen text-white text-center p-10 md:hidden': "hidden md:hidden"}>
+            <div className={toggle ?' relative w-full bg-blac top-0 h-screen text-white text-center p-10 md:hidden': "hidden md:hidden"}>
                 <div className=' py-6 text-lg text-gray-400 hover:text-white cursor-pointer underline underline-offset-8'>
                     <Link to="/"><h1 onClick={()=>setToggle(!toggle)}>Home</h1></Link>
                 </div>

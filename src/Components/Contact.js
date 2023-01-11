@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 pt-16 text-white"
+      className="w-full h-screen p-4 pt-16 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <motion.div animate={{y:0}} initial={{y:-900}} transition={{ ease: "easeInOut", duration: 2 }} className="pb-8 flex items-center justify-center flex-col">
@@ -26,20 +26,20 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               required
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
             />
             <motion.input animate={{rotateZ: 360}} transition={{ ease: "easeOut", duration: 2 }}
               type="text"
               name="email"
               placeholder="Enter your email"
               required
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
             />
             <motion.textarea animate={{y:0}} initial={{y:900}} transition={{ ease: "easeInOut", duration: 2 }}
               name="message"
               placeholder="Enter your message"
               rows="8"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
             ></motion.textarea>
             <motion.button animate={{y:0}} initial={{y:900}} transition={{ ease: "easeInOut", duration: 2 }} className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300 animate-bounce">
               Let's talk &rarr;

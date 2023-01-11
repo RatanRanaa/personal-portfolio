@@ -38,9 +38,9 @@ const Projects = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b bg-black w-full text-white md:h-screen" //from-black to-gray-800
+      className="bg-gradient-to-b w-full text-white md:h-screen" //from-black to-gray-800
     >
-      <div className="max-w-screen-lg p-12 md:p-24 mx-auto flex flex-col justify-center w-full h-full ">
+      <div className="max-w-screen-lg p-14 md:p-24 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8 flex items-center justify-center flex-col">
           <p className="text-5xl tracking-wider font-bold uppercase inline border-b-4 text-red-500">
             Projects

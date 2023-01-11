@@ -8,11 +8,11 @@ import SocialLinks from './SocialLinks'
 const Home = () => {
   return (
     <>
-    <div className=' w-full h-screen bg-black text-white'>
+    <div className=' w-full h-screen'>
         <div className=' flex items-center justify-between'>
             <div className=' mx-auto h-screen w-full flex items-center justify-center flex-col px-5'>
-                <motion.h2 animate={{x:0}} initial={{x:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' text-2xl'> <span className=' text-orange-400'>H</span>i I'm </motion.h2>
-                <motion.h1 animate={{x:0}} initial={{x:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' pb-10 text-3xl'> <span className=' text-orange-400'>R</span>atan <span className=' text-orange-400'>R</span>ana</motion.h1>
+                <motion.h2 animate={{x:0}} initial={{x:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' text-4xl'> <span className=' text-red-500'>H</span>i I'm </motion.h2>
+                <motion.h1 animate={{x:0}} initial={{x:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' pb-10 text-3xl'> <span className=' text-red-500'>R</span>atan <span className=' text-red-500'>R</span>ana</motion.h1>
                 <motion.p animate={{x:0}} initial={{x:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' mb-44 text-center w-96'>
                     I'm a professional front-end developer from India with 2+ years of
                     experience. I've worked on more than 20+ projects including
