@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen p-4 pt-16 text-white"
+      className="w-full h-screen p-4 pt-16"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <motion.div animate={{y:0}} initial={{y:-900}} transition={{ ease: "easeInOut", duration: 2 }} className="pb-8 flex items-center justify-center flex-col">

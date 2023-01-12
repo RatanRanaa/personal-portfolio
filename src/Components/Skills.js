@@ -46,7 +46,7 @@ const Skills = () => {
     },
     {
       id: 7,
-      title: "GraphQL",
+      title: "Redux",
       src: graphql,
     },
     {
@@ -57,7 +57,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="experience" className="w-full text-white md:h-full h-full pb-20">
+    <div id="experience" className="w-full md:h-full h-full pb-20">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center">
         <motion.h2 animate={{x:0}} initial={{x:900}} transition={{ ease: "easeInOut", duration: 2 }} className="text-5xl md:text-7xl border-b-4 inline tracking-wider uppercase text-red-500 font-bold">
           skills
