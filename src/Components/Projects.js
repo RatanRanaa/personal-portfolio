@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
 import React from "react";
 import calculater from "../images/calculater.png";
-import Redux from "../images/Redux.png";
+import PIZZA from "../images/PiZZA.png";
 import textutils from "../images/textutils.png";
 
 const Projects = () => {
@@ -18,13 +17,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: Redux,
-      href:"https://redux-ratanranaa.vercel.app//"
+      src: PIZZA,
+      href:"https://react-responsive-website.vercel.app"
     },
   ];
 
   return (
     <div
+    id="projects"
       name="portfolio"
       className="bg-gradient-to-b w-full md:h-screen"
     >
@@ -36,7 +36,7 @@ const Projects = () => {
           <p className="py-3">Check out some of my work right here</p>
         </div>
 
-        <motion.div animate={{y:0}} initial={{y:400}} transition={{ ease: "easeInOut", duration: 2 }} className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, href }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -57,7 +57,7 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

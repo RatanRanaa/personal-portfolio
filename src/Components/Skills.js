@@ -9,7 +9,6 @@ import nextjs from "../images/nextjs.png";
 import tailwind from "../images/tailwind.png";
 import graphql from "../images/graphql.png";
 import node from "../images/node.png";
-import { motion } from "framer-motion";
 // import Image from "next/image";
 
 const Skills = () => {
@@ -58,16 +57,16 @@ const Skills = () => {
 
   return (
     <div id="experience" className="w-full md:h-full h-full pb-20">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center">
-        <motion.h2 animate={{x:0}} initial={{x:900}} transition={{ ease: "easeInOut", duration: 2 }} className="text-5xl md:text-7xl border-b-4 inline tracking-wider uppercase text-red-500 font-bold">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center" id="skills">
+        <h2 className="text-5xl md:text-7xl border-b-4 inline tracking-wider uppercase text-red-500 font-bold">
           skills
-        </motion.h2>
-        <motion.p animate={{x:0}} initial={{x:900}} transition={{ ease: "easeInOut", duration: 2 }} className="py-4 w-80 flex items-center justify-center flex-col mx-auto mt-4">
+        </h2>
+        <p className="py-4 w-80 flex items-center justify-center flex-col mx-auto mt-4">
           I have given too much time to learn this all thing just Now I have compleated One Years And Now a day's I am working on Next.js
           
-        </motion.p>
+        </p>
 
-        <motion.div animate={{x:0}} initial={{x:-1300}} transition={{ ease: "easeInOut", duration: 2 }} className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-4 gap-8">
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
@@ -78,7 +77,7 @@ const Skills = () => {
               <h3 className="font-light">{title}</h3>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
