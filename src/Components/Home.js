@@ -7,7 +7,7 @@ const Home = () => {
     <div className=' w-full h-screen' id='home'>
         <div className=' flex items-center justify-between'>
             <div className=' mx-auto h-screen w-full flex items-center justify-center flex-col px-5'>
-                <motion.h2 animate={{y:0}} initial={{y:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' text-4xl'> <span className=' text-red-500'>H</span>i I'm </motion.h2>
+                <motion.h2 animate={{y:0}} initial={{y:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' text-4xl pt-44'> <span className=' text-red-500'>H</span>i I'm </motion.h2>
                 <motion.h1 animate={{y:0}} initial={{y:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' pb-10 text-3xl'> <span className=' text-red-500'>R</span>atan <span className=' text-red-500'>R</span>ana</motion.h1>
                 <motion.p animate={{y:0}} initial={{y:-600}} transition={{ ease: "easeInOut", duration: 2 }} className=' mb-44 text-center w-96'>
                     I'm a professional front-end developer from India with 2+ years of

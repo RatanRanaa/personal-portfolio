@@ -23,6 +23,7 @@ const Projects = () => {
   ];
 
   return (
+    <>
     <div
     id="projects"
       name="portfolio"
@@ -59,7 +60,8 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div><br /><br /><br /><br /><br /><br />
+    </>
   );
 };
 
